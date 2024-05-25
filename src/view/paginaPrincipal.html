@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Internacional</title>
+    <link rel="stylesheet" href="../css/paginaPrincipal.css">
+    <link rel="shortcut icon" href="../img/bank.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5d0dc5f03f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Definimos los elementos para la barra de Navegación -->
+    <nav class="barra-navegacion">
+        <i class="fa-solid fa-bars icon-menu" id="icon-menu"></i>
+        <p class="parrafoMenu">Menú</p>  
+        <div id="modo_black"></div> 
+
+        <img src="../img/Banco-Internacional.png" alt="Logo_Banco" class="logo_banco">
+
+        <div class="menu_despegable">
+            <i class="fa-solid fa-bars icon-menu iconmenu-c"></i>
+            <a href="./IniciarSesion.html">Iniciar Sesión</a>
+            <a href="#">Crear Cuenta Bancaria</a>
+            <a href="#">Soportes</a>
+            <a href="#">Recuperación de Cuenta</a>
+        </div>
+
+        <button class="buttonAcceso" id="buttonAccesso">Acceso</button>
+        <button class="buttonRegistrarse">
+            <i class="fa-solid fa-user-plus icon-newUser"></i>
+            Unirse
+        </button>
+    </nav>
+
+    <!-- Slider de imagenes rotativas -->
+    <div class="slider-imgs">
+        <img src="../img/Banco-Internacional.jpg" alt="img1" class="img1" id="img1">
+        <img src="../img/economia-global-dinero-negocios_24877-50957.jpg" alt="img2" class="img2" id="img2">
+        <img src="../img/9f9438a9aafa885d7ffd7ba3b52b3746.jpg" alt="img3" id="img3">
+    </div>
+
+    <!-- Definimos la ventana que nos va servir como ventana de alerta a una accion (exit) -->
+    <div class="ventanaModalSalir" id="ventanaModalSalir">
+        <i class="fa-solid fa-circle-exclamation icon-exit" style="color: #ff0000;"></i>
+        <p class="parrafoSalir">¿Quieres Salir del Inicio del Sistema?</p>
+        
+        <button class="button-verified" id="button-verified">
+            <span class="icon-verified"></span>
+        </button>
+        
+        <button class="verified-exit" id="button-verifiedExit">
+            <span class="icon-exit2"></span> 
+        </button>
+    </div>
+
+    <!--Definimos el formulario de login para los usuarios ya registrados que quieran acceder a la plataforma -->
+    <div class="div-login" id="div_login"> 
+
+        <div class="figura"></div>
+
+        <form class="form-login" id="form-login">
+            <label for="InputNumeroDocument" class="labelNumeroDocument">Número de Documento:</label>
+            <input type="number" class="inputNumeroDocument" id="InputNumeroDocument">
+
+            <label for="" class="labelClave">Clave:</label>
+            <input type="password" class="InputClave" id="InputClave">
+
+            <img src="../img/eye-regular.svg" alt="" class="visible-password">
+            <img src="../img/eye-slash-regular.svg" alt="" class="invisible-password">
+            
+            <div class="contenedor-buttones"> 
+                <button class="buttonIniciar">Iniciar</button>
+                <button class="buttonSalir" id="buttonSalir">Salir</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="publicidad-secundaria">
+        <img src="../img/Publicitaria.jpg" alt="publicitaria" class="segunda-publicidad">
+        <p class="p1">SOMOS SEGURIDAD, CONFIANZA, RESPONSABLES, LA MEJOR OPCIÓN</p>
+        <P class="p2">SOMOS BANCO INTERNACIONAL</P>
+    </div>
+
+
+    <div class="titulos-finales">
+        <i class="fa-brands fa-instagram icon-instagram" style="color: #ffffff;"></i>
+        <p class="p-instagram">@bancoInternacional</p>
+
+        <i class="fa-brands fa-facebook icon-facebook" style="color: #ffffff;"></i>
+        <p class="p-facebook">bancooInternacional</p>
+
+        <i class="fa-brands fa-whatsapp icon-whatsapp" style="color: #ffffff;"></i>
+        <p class="p-whatsapp">0800-584-784-443</p>
+
+        <i class="fa-brands fa-telegram icon-telegram" style="color: #ffffff;"></i>
+        <p class="p-telegram">@bancoOInternacionaal</p>
+
+        <p class="pf">Banco dedicado a la seguridad y servicio de los demás</p>
+        
+    </div>
+
+    <script src="../js/paginaPrincipal.js"></script>
+</body>
+</html>

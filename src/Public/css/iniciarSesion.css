@@ -1,0 +1,125 @@
+/* ESTILOS PARA LA PAGINA DE INICAR SESION */
+html{
+    height: 100%;
+    background: linear-gradient(blue, rgb(147, 147, 255));
+}
+
+.div-form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background: linear-gradient(blue, rgba(0, 0, 0, 0.589));
+    box-shadow: 4px 4px 15px black;
+}
+
+.form-Sesion{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-Sesion label,
+.form-sesion input{
+    margin-bottom: 20px;
+}
+
+.form-Sesion label{
+    font-size: 30px;
+    color: white;
+}
+
+.form-Sesion input{
+    font-size: 22px;
+    border: transparent;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 250px;
+    transform: translate(10%);
+}
+
+.form-Sesion input:focus{
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-Sesion label ~ input{
+    margin-bottom: 50px;
+}
+
+.a-olvideclave{
+    position: absolute;
+    color: white;
+    top: 290px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.buttonIniciar{
+    background-color: greenyellow;
+    height: 40px;
+    width: 80px;
+    color: white;
+    font-size: 22px;
+    transform: translate(110%);
+    font-size: 20px;
+    border: transparent;
+    border-radius: 7px;
+    padding: 10px;
+    position: absolute;
+    top: 330px;
+    right: 300px;
+}
+
+.buttonIniciar:active{
+    scale: 0.99;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.buttonSalir{
+    background-color: red;
+    height: 40px;
+    width: 80px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    display: block;
+    border: transparent;
+    border-radius: 7px;
+    padding: 10px;
+    left: 45px;
+    left: 220px;
+    top: 330px;
+}
+
+.buttonSalir:active{
+    scale: 0.99;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.visible-password{
+    position: absolute;
+    height: 19px;
+    top: 240px;
+    left: 310px;
+}
+
+.invisible-password{
+    position: absolute;
+    height: 19px;
+    top: 240px;
+    left: 310px;
+    display: none;
+}

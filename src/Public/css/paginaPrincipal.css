@@ -1,0 +1,562 @@
+/* ESTILOS PARA EL FONDO DE LA WEB */
+html{
+    height: 200%;
+    background: linear-gradient(blue, rgb(147, 147, 255));
+}
+
+/* ESTILOS PARA LA BARRA DE NAVEGACIÓN */
+.barra-navegacion{
+    display: flex;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    align-items: center;
+    position: relative;
+    height: 60px;
+    z-index: 1;
+}
+
+.parrafoMenu{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    left: 35px;
+    top: 1px;
+    font-size: 22px;
+    font-family: "Retosta";
+}
+
+.buttonAcceso{
+    background-color: rgb(13, 13, 190);
+    padding: 5px;
+    border: transparent;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    left: 990px;
+}
+
+.buttonAcceso::after{
+    content: "";
+    justify-content: center;
+    position: absolute;
+    padding: 5px;
+    width: 0;
+    height: 24px;
+    background-color: transparent;
+    transition: width 1s ease;
+    left: 0;
+    border-radius: 5px;
+    bottom: 0px;
+}
+
+.buttonAcceso:hover::after{
+    background-color: rgb(84, 84, 235);
+    width: 70px;
+    content: "Acceso";
+    overflow: hidden;
+}
+
+.buttonAcceso{
+    scale: 0.9;
+}
+
+.buttonRegistrarse{
+    background-color: rgb(51, 51, 255);
+    padding: 5px;
+    border: transparent;
+    color: white;
+    font-size: 18px;
+    position: relative;
+    width: 100px;
+    height: 35px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    left: 1000px;
+}
+
+.icon-newUser{
+    left: 10px;
+}
+
+.logo_banco{
+    position: absolute;
+    width: 300px;
+    left: 35%;
+}
+
+/* ESTILOS PARA EL MENU DESPEGABLE */
+.menu_despegable{
+    background-color: white;
+    display: inline-block;
+    padding: 25px;
+    height: 525px;
+    width: 250px;
+    border-radius: 20px;
+    position: absolute;
+    left: -350px;
+    transition: left 0.3s ease;
+    top: 0;
+    z-index: 3;
+}
+
+.menu_despegable a{
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    top: 60px;
+}
+
+.menu_despegable a:hover{
+    color: blue;
+    font-weight: 600;
+    border-bottom: 2px solid blue;
+}
+
+.icon-menu{
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    left: 20px;
+    color: white;
+}
+
+@font-face {
+    font-family: "Retosta";
+    src: url(../Fonts/Retosta.otf);
+}
+
+.icon-menu{
+    cursor: pointer;
+}
+
+.animacionmenu{
+    left: 3px;
+}
+
+.iconmenu-c{
+    display: inline-block;
+    position: absolute;
+    color: blue;
+    top: 20px;
+}
+
+.ocultar{
+    right: 200px;
+}
+
+/* ESTILOS PARA EL LOGIN DE ACCESO PARA LOS USUARIOS */
+.div-login{
+    background: linear-gradient(blue, rgba(0, 0, 0, 0.589));
+    padding: 50px;
+    width: 520px;
+    height: 350px;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -45%);
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    visibility: hidden;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: visibility 10s, opacity 0.7s, max-height 1s;
+    z-index: 1;
+}
+
+.animacionLogin{
+    visibility: visible;
+    opacity: 1;
+    max-height: 520px; 
+}
+
+.form-login{
+    position: absolute;
+    left: 350px;
+}
+
+.figura{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: greenyellow;
+    height: 450px;
+    width: 340px;
+    border-radius: 5px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    background-image: url(../img/img555.jpg);
+    background-position: right;
+    background-position-x: 375px;
+    background-size: cover;
+    z-index: 1;
+    box-shadow: 5px 1px 10px #ffff, 0px -1px 10px #ffff;
+}
+
+.div-login label{
+    display: block;
+    font-size: 26px;
+    color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.div-login input{
+    border: transparent;
+    background: transparent;
+    border-bottom: 2px solid white;
+    width: 210px;
+    color: white;
+    font-size: 22px;
+}
+
+.div-login input:focus{
+    outline: none;
+}
+
+.labelNumeroDocument{
+    position: relative;
+}
+
+.inputNumeroDocument{
+    position: relative;
+    top: 10px;
+}
+
+.labelClave{
+    position: relative;
+    top: 70px;
+}
+
+.InputClave{
+    position: relative;
+    top: 80px;
+}
+
+.visible-password{
+    height: 19px;
+    position: absolute;
+    top: 170px;
+    right: 30px;
+}
+
+.invisible-password{
+    height: 19px;
+    position: absolute;
+    top: 170px;
+    right: 30px;
+    display: none;
+}
+
+.buttonIniciar{
+    background-color: greenyellow;
+    height: 40px;
+    width: 80px;
+    color: white;
+    font-size: 22px;
+    top: 130px;
+    transform: translate(110%);
+    font-size: 20px;
+    border: transparent;
+    border-radius: 7px;
+    padding: 10px;
+    margin-left: 55px;
+}
+
+.buttonIniciar:active{
+    scale: 0.99;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.buttonSalir{
+    background-color: red;
+    height: 40px;
+    width: 80px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    display: block;
+    border: transparent;
+    border-radius: 7px;
+    padding: 10px;
+    left: 45px;
+}
+
+.buttonSalir:active{
+    scale: 0.99;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor-buttones{
+    display: flex;
+    position: relative;
+    top: 140px;
+}
+
+.ventanaModalSalir{
+    background: rgba(54, 91, 255, 0.7) ;
+    height: 300px;
+    width: 400px;
+    display: none;
+    position: absolute;
+    left: 430px;
+    top: 160px;
+    border-radius: 20px;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: "amable";
+    src: url(../Fonts/Amble-Italic.ttf);
+}
+
+.parrafoSalir{
+    color: white;
+    font-size: 24px;
+    font-family: "amable";
+}
+
+.icon-exit{
+    font-size: 90px;
+    display: flex;
+    position: absolute;
+    left: 175px;
+    top: 35px;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.button-verified{
+    background-color: rgb(29, 255, 29);
+    height: 50px;
+    width: 60px;
+    font-size: 10px;
+    position: absolute;
+    top: 220px;
+    border-radius: 7px;
+    border: transparent;
+    left: 120px;
+}
+
+.button-verified:active{
+    scale: 0.9;
+}
+
+.icon-verified{
+    background-image: url(../img/icons8-marca-de-verificación-100.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: absolute;
+    height: 51px;
+    width: 51px;
+    bottom: 1px;
+}
+
+.verified-exit{
+    background-color: red;
+    height: 50px;
+    width: 60px;
+    font-size: 10px;
+    position: absolute;
+    top: 220px;
+    border-radius: 7px;
+    border: transparent;
+    left: 270px;
+}
+
+.verified-exit:active{
+    scale: 0.9;
+}
+
+.icon-exit2{
+    background-image: url(../img/icons8-x-96.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    height: 51px;
+    width: 51px;
+    right: 2px;
+    bottom: 1px;
+}
+
+/* ESTILOS Y ANIMACIONES DE FONDOS OSCUROS */
+
+.fondo-oscuro{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* ESTILOS PARA EL CONTENIDO DE LA PAGINA PRINCIPAL */
+.slider-imgs{
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    width: 99%;
+    height: 69%;
+    background: rgba(231, 231, 231, 0.5);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.slider-imgs img{
+    float: left;
+    width: 30%;
+    height: 70%;
+    margin-left: 30px;
+    border-radius: 15px;
+    position: relative;
+
+}
+
+.animacion-slider{
+    scale: 1.1;
+    box-shadow: 1px 1px 15px black;
+}
+
+.titulos-finales{
+    background-color: rgba(0, 0, 0, 0.822);
+    position: absolute;
+    display: flex;
+    height: 140px;
+    width: 100%;
+    top: 200%;
+    right: 1px;
+    align-items: center;
+}
+
+.segunda-publicidad{
+    position: relative;
+    height: 500px;
+    width: 650px;
+    top: 540px;
+}
+
+.segunda-publicidad:hover{
+    cursor: pointer;
+}
+
+.p1{
+    position: absolute;
+    font-size: 30px;
+    left: 700px;
+    top: 700px;
+    font-family: "Retosta";
+    background: linear-gradient(rgb(1, 1, 122),rgb(0, 21, 66));
+    background-clip: text;
+    color: transparent;
+}
+
+.p2{
+    position: absolute;
+    font-size: 40px;
+    left: 700px;
+    top: 860px;
+    font-family: "Retosta";
+    background: linear-gradient(rgb(1, 1, 122),rgb(0, 21, 66));
+    background-clip: text;
+    color: transparent;
+}
+
+.icon-instagram{
+    font-size: 25px;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.p-instagram{
+    color: white;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 12px;
+    left: 70px;
+    font-size: 19px;
+}
+
+.icon-facebook{
+    font-size: 25px;
+    position: absolute;
+    top: 75px;
+    left: 40px;
+}
+
+.p-facebook{
+    font-size: 19px;
+    position: absolute;
+    top: 58px;
+    left: 75px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.icon-whatsapp{
+    font-size: 25px;
+    position: absolute;
+    top: 29px;
+    left: 380px;
+}
+
+.p-whatsapp{
+    font-size: 19px;
+    position: absolute;
+    top: 11px;
+    left: 410px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.icon-telegram{
+    font-size: 25px;
+    position: absolute;
+    top: 76px;
+    left: 380px;
+}
+
+.p-telegram{
+    font-size: 19px;
+    position: absolute;
+    top: 56px;
+    left: 410px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.pf{
+    color: white;
+    font-size: 21px;
+    display: flex;
+    position: absolute;
+    left: 66%;
+    width: 300px;
+    text-align: center;
+}
+
