@@ -16,4 +16,4 @@ app.use("/IniciarSesion.html", routes);
 // Indicando el puerto donde se iniciará el servidor
 app.listen(3000, () => {
     console.log("El servidor está en espera de conexiones");
-});
+}); 
